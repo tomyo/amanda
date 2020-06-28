@@ -1,37 +1,39 @@
 {{ partial "head.html" . }}
   <body>
     <div class='wrapper'>
-      <section class="container">
-        <h1 class="item">Cisco Pema</h1>
-        <hr />
-        <div class="container video-link" data-video-id="nhkENW7HHj0" data-video-auto-close="true">
+      <section id="links" class="container">
+        <h1>AMANDA</h1>
+        <!-- <hr /> -->
+        <!-- <div class="container video-link" data-video-id="nhkENW7HHj0" data-video-auto-close="true">
           <p class="panel-cover__description"> New Album Release December 2017 </p>
           <i class="fa fa-youtube-play fa-3x"></i>
-        </div>
-        <hr class="second-divisor"/>
+        </div> -->
+        <!-- <hr class="second-divisor"/> -->
         <div class="container-inline">
-          <nav class="container">
+          <!-- <nav class="container">
             <a href="#pressInfo#En" data-toggle="modal" class="button">+ Info</a>
-          </nav>
-          <nav>
-            <a class="button-social" href="http://facebook.com/ciscopemamusic" title="@ciscopemamusic on Facebook">
+          </nav> -->
+          <nav id="icons">
+            <a class="button-social" target="_blank" href="https://www.facebook.com/amandabandofficial/" title="@amandabandofficial auf Facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a class="button-social" href="http://instagram.com/ciscopema" title="@ciscopema on Instagram">
+            <a class="button-social" target="_blank" href="http://instagram.com/amandaband_official" title="@amandaband_official auf Instagram">
               <i class="fab fa-instagram"></i>
-            </a>  
-            <a class="button-social" href="mailto:hola@ciscopema.com" title="Email hola@ciscopema.com">
+            </a>
+            <a class="button-social" href="mailto:info@amandaband.com" title="info@amandaband.com">
               <i class="far fa-envelope"></i>
             </a>
             <br />
-            <a class="button-social" href="https://www.youtube.com/channel/UC3K26naF-NtGUZzu-Mrb2Sw" title="@ciscopema Youtube channel">
+            <a class="button-social" target="_blank" href="https://www.youtube.com/watch?v=s6rsiJRt0IY" title="Amanda auf Youtube">
               <i class="fab fa-youtube"></i>
             </a>
-            <a class="button-social" href="https://open.spotify.com/artist/6eIRNPQkGR88apwP28kM7j" title="@ciscopema on Spotify">
+            <a class="button-social" target="_blank" href="https://open.spotify.com/artist/0AcGBTkUlKFljvJ1RfYEnh" title="@Amanda auf Spotify">
               <i class="fab fa-spotify"></i>
             </a>
-            <a class="button-social" href="https://itunes.apple.com/de/artist/cisco-pema/1156430283" title="@ciscopema on iTunes">
-              <i class="fab fa-itunes-note"></i>
+            <a class="button-social" target="_blank" href="https://amanda.lnk.to/DurchDieEwigkeit" title="Neuestes Album anhören/kaufen">
+              <!-- <i class="fal fa-record-vinyl"></i> -->
+              <i class="fas fa-record-vinyl"></i>
+              <!-- <img src="images/vinyl.png" alt="Durch die Ewigkeit"></img> -->
             </a>
 
           </nav>
@@ -41,17 +43,18 @@
         <!-- <a id="listen" href="https://ciscopema.bandcamp.com/album/cisco-pema" class="button">
           Music
         </a> -->
-        <hr />
-        <a id="tourDates" href="#tourDates" class="button">Tour dates</a>
+        <!-- <hr /> -->
+        <!-- <img src="images/vinyl.png" alt="Durch die Ewigkeit"></img> -->
+        <!-- <a id="tourDates" href="#tourDates" class="button">Tour dates</a> -->
       </section>
-      <section id="tourDatesSection" style="display: none">
+      <!-- <section id="tourDatesSection" style="display: none">
         <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Cisco Pema" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#2F95DE" data-popup-background-color="#FFFFFF" data-background-color="#FFFFFF" data-display-limit="15" data-link-text-color="#FFFFFF"></a>
-      </section>
-      <section class="modals">
+      </section> -->
+      <!-- <section class="modals">
         {{ partial "press-info-en.html" .}}
         {{ partial "press-info-de.html" .}}
         {{ partial "press-info-es.html" .}}
-      </section>
+      </section> -->
     </div>
   </body>
 </html>
