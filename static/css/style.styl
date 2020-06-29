@@ -1,16 +1,17 @@
 main-color = #FFF
 responsiveBreakpoint = 350px
 
-@font-face
-  font-family: 'Ubuntu', sans-serif
-  font-style: normal
-  font-weight: 400
-  src: local("Ubuntu"), local("Ubuntu"), url(../fonts/Ubuntu-Regular.ttf) format("ttf")
+@font-face {
+  font-family: system, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 @font-face
-  font-family: 'Source Serif Pro', serif
+  font-family: 'Amanda', serif;
   font-style: normal
-  font-weight: 400
+  font-weight: 700
   src: local("Source Serif Pro"), local("Source Serif Pro"), url(../fonts/SourceSerifPro-Regular.otf) format("otf")
 
 background-size()
@@ -35,7 +36,7 @@ body
   /*background: linear-gradient(to bottom, rgba(68,68,68,.6) 20%,rgba(0,0,0,.9) 100%), url(/images/cd-cover.jpg) */
   background-size(cover)
   font-size: 1em
-  font-family: Ubuntu, sans-serif
+  font-family: "system"
   color: main-color
 
 .bit-widget
@@ -68,11 +69,11 @@ body
   //   padding: 60px 0px
 
 h1
-  font-weight: 100
+  font-weight: 700
   font-stretch: normal
   font-size: 50px
   letter-spacing: 4px
-  font-family: "Source Serif Pro", serif
+  font-family: "Gentium Basic"
 
 hr
   border: 0
@@ -101,7 +102,7 @@ hr
   text-shadow: none
   text-decoration: none
   border-color: main-color
-  opacity: .8
+  opacity: .9
   color: main-color
 
 .button:hover

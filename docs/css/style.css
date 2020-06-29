@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: system, sans-serif;
   font-style: normal;
-  font-weight: 400;
-  src: local("Ubuntu"), local("Ubuntu"), url("../fonts/Ubuntu-Regular.ttf") format("ttf");
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 @font-face {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Amanda', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: local("Source Serif Pro"), local("Source Serif Pro"), url("../fonts/SourceSerifPro-Regular.otf") format("otf");
 }
 html {
@@ -21,7 +21,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-size: 1em;
-  font-family: Ubuntu, sans-serif;
+  font-family: "system";
   color: #fff;
 }
 .bit-widget {
@@ -52,11 +52,11 @@ body {
   padding: 60px 0px;
 }
 h1 {
-  font-weight: 100;
+  font-weight: 700;
   font-stretch: normal;
   font-size: 50px;
   letter-spacing: 4px;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Gentium Basic";
 }
 hr {
   border: 0;
@@ -84,7 +84,7 @@ hr {
   text-shadow: none;
   text-decoration: none;
   border-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   color: #fff;
 }
 .button:hover {
