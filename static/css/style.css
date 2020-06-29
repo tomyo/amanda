@@ -96,6 +96,7 @@ hr {
 .button-social {
   padding: 6px 8px 6px 9px;
   display: inline-block;
+  height: 1em;
 }
 .modalDialog {
   position: fixed;
@@ -156,4 +157,8 @@ section {
 #icons {
   display: flex;
   font-size: 1.3em;
+}
+#icons .icon {
+  height: 1em;
+  filter: invert(1);
 }
