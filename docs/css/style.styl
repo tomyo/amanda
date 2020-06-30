@@ -28,8 +28,12 @@ whenSmall()
   @media screen and (max-width: responsiveBreakpoint)
     arguments
 
+*
+  margin: 0
+
 html
   min-width: 335px  // Browsers add some default marging to body
+  scroll-behavior: smooth
 
 body
   background: url(/images/landing-desktop-lq.jpg) no-repeat center center fixed
@@ -39,10 +43,6 @@ body
   font-family: "system"
   color: main-color
 
-.bit-widget
-  background: transparent !important
-  *
-    color: white !important
 
 .container
   display: flex
@@ -57,21 +57,21 @@ body
   justify-content: center
   align-items: center
 
-.container *
-  margin: 2px;
+// .container *
+//   margin: 2px;
 
 .wrapper
   max-width: 620px
   margin: 0 auto
   @extend .container
-  padding: 60px 0px
+  padding: 6rem 0px
   // @media screen and (min-width: responsiveBreakpoint)
   //   padding: 60px 0px
 
 h1
   font-weight: 700
   font-stretch: normal
-  font-size: 50px
+  font-size: 3em
   letter-spacing: 4px
   font-family: "Gentium Basic"
 
@@ -102,7 +102,7 @@ hr
   text-shadow: none
   text-decoration: none
   border-color: main-color
-  opacity: .9
+  // opacity: .9
   color: main-color
 
 .button:hover
@@ -165,7 +165,7 @@ hr
   font-weight: bold;
 
 section
-  margin-bottom: 20px
+  margin-bottom: 2em
 
 
 @media screen and (max-width: responsiveBreakpoint)
@@ -175,12 +175,32 @@ section
 
 // Amanda changes
 #links
-  h1
-    margin: .5em
+  > *
+    margin-bottom: 1rem
+
 
 #icons
   display: flex
   font-size: 1.3em
+  & > *
+    margin: 2px
   .icon
     height : 1em;
     filter: invert(1)
+
+
+.show-only-on-target:not(:target)
+  display: none;
+
+
+// Bands in town widget
+
+.bit-widget
+  background: rgba(0, 0, 0, 0.5) !important
+  box-shadow: 0px 5em 5em 5em rgba(0,0,0,0.5)
+  .bit-button, .bit-play-my-city-button
+    border: 1px solid white !important
+  .bit-offers, .bit-play-my-city-button
+    background-color: black !important
+  *
+    color: white !important
