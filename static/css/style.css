@@ -162,6 +162,7 @@ section {
   display: none;
 }
 .bit-widget {
+  font-family: "Gentium Basic" !important;
   background: rgba(0,0,0,0.1) !important;
   box-shadow: 0px 5em 5em 5em rgba(0,0,0,0.1);
 }
@@ -175,4 +176,17 @@ section {
 }
 .bit-widget * {
   color: #fff !important;
+}
+.bit-widget .bit-logo-container,
+.bit-widget .bit-top-track-button {
+  display: none !important;
+}
+.bit-widget .bit-nav-bar {
+  justify-content: center;
+}
+.bit-widget .bit-details {
+  text-align: center;
+}
+.bit-widget .bit-details > * {
+  filter: drop-shadow(0 0 1px #000);
 }

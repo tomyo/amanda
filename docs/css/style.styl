@@ -1,6 +1,3 @@
-main-color = #FFF
-responsiveBreakpoint = 350px
-
 @font-face {
   font-family: system, sans-serif;
   font-style: normal;
@@ -13,6 +10,11 @@ responsiveBreakpoint = 350px
   font-style: normal
   font-weight: 700
   src: local("Source Serif Pro"), local("Source Serif Pro"), url(../fonts/SourceSerifPro-Regular.otf) format("otf")
+
+
+main-color = #FFF
+responsiveBreakpoint = 350px
+main-font-family = "Gentium Basic"
 
 background-size()
   -webkit-background-size: arguments
@@ -40,7 +42,7 @@ body
   /*background: linear-gradient(to bottom, rgba(68,68,68,.6) 20%,rgba(0,0,0,.9) 100%), url(/images/cd-cover.jpg) */
   background-size(cover)
   font-size: 1em
-  font-family: "Gentium Basic"
+  font-family: main-font-family
   color: main-color
 
 
@@ -73,7 +75,7 @@ h1
   font-stretch: normal
   font-size: 3em
   letter-spacing: 4px
-  font-family: "Gentium Basic"
+  font-family: main-font-family
 
 hr
   border: 0
@@ -196,6 +198,7 @@ section
 // Bands in town widget
 
 .bit-widget
+  font-family: main-font-family !important
   background: rgba(0, 0, 0, 0.1) !important
   box-shadow: 0px 5em 5em 5em rgba(0,0,0,0.1)
   .bit-button, .bit-play-my-city-button
@@ -204,3 +207,12 @@ section
     background-color: black !important
   *
     color: white !important
+  .bit-logo-container, .bit-top-track-button
+    display: none !important
+  .bit-nav-bar
+    justify-content: center
+  .bit-details
+    text-align: center
+  .bit-details > *
+    filter: drop-shadow(0 0 1px black)
+
