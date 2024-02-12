@@ -2,13 +2,16 @@
   font-family: system, sans-serif;
   font-style: normal;
   font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 @font-face {
-  font-family: 'Amanda', serif;
+  font-family: "Amanda", serif;
   font-style: normal;
   font-weight: 700;
-  src: local("Source Serif Pro"), local("Source Serif Pro"), url("../fonts/SourceSerifPro-Regular.otf") format("otf");
+  src: local("Source Serif Pro"), local("Source Serif Pro"),
+    url("../fonts/SourceSerifPro-Regular.otf") format("otf");
 }
 * {
   margin: 0;
@@ -18,8 +21,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url("/images/landing-desktop-lq.jpg") no-repeat center center fixed;
-/*background: linear-gradient(to bottom, rgba(68,68,68,.6) 20%,rgba(0,0,0,.9) 100%), url(/images/cd-cover.jpg) */
+  background: url("/images/landing-desktop-lq.jpg") no-repeat center center
+    fixed;
+  /*background: linear-gradient(to bottom, rgba(68,68,68,.6) 20%,rgba(0,0,0,.9) 100%), url(/images/cd-cover.jpg) */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,6 +31,8 @@ body {
   font-size: 1em;
   font-family: "Gentium Basic";
   color: #fff;
+  min-height: 100vh;
+  min-height: 100svb;
 }
 .container,
 .wrapper {
@@ -67,7 +73,7 @@ hr {
 }
 .video-link p {
   font-weight: 100;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 .button,
 .button-social {
@@ -97,7 +103,7 @@ hr {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
@@ -163,8 +169,8 @@ section {
 }
 .bit-widget {
   font-family: "Gentium Basic" !important;
-  background: rgba(0,0,0,0.1) !important;
-  box-shadow: 0px 5em 5em 5em rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 5em 5em 5em rgba(0, 0, 0, 0.1);
 }
 .bit-widget .bit-button,
 .bit-widget .bit-play-my-city-button {
